@@ -89,6 +89,7 @@
         <button id="buy">Купить</button>
     </div>
     <form id="form">
+        <h1>Оформление покупки</h1>
         <input type="text" placeholder="Имя" id="user_name">
         <input type="text" placeholder="Почта" id="user_email">
         <input type="text" placeholder="Телефон" id="user_phone">
@@ -104,11 +105,11 @@
             document.getElementById("main").style.display = "none";
             document.getElementById("form").style.display = "block";
             document.getElementById("user_name").value = tg.initDataUnsafe.user.first_name + " " + tg.initDataUnsafe.user.last_name;
-        }};
+        });
 
         order.addEventListener("click", () => {
             tg.close();
-        }};
+        });
     </script>
 </body>
 </html>
